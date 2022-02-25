@@ -1,0 +1,7 @@
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\bin\Controles_De_Servidores.dll.config
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\bin\Controles_De_Servidores.dll
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\bin\Controles_De_Servidores.pdb
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\obj\Debug\Controles_De_Servidores.csproj.AssemblyReference.cache
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\obj\Debug\Controles_De_Servidores.csproj.CoreCompileInputs.cache
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\obj\Debug\Controles_De_Servidores.dll
+C:\Users\Victo\Desktop\Proyectos 2022\Curso de controles de servidores\Curso Web_Form con ADO\Controles_De_Servidores\Controles_De_Servidores\obj\Debug\Controles_De_Servidores.pdb
