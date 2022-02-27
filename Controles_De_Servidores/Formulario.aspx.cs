@@ -20,72 +20,24 @@ namespace Controles_De_Servidores
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            int a, b, c;
-            a =int.Parse(txtNum1.Text);
-            b = int.Parse(txtNum2.Text);
-            c = a + b;
-            lblResult.Text ="Mi resultado es "+ c.ToString();
-
+            Calendar1.Visible = true;
         }
 
-        protected void lkbtnAdd_Click(object sender, EventArgs e)
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
         {
-            int a, b, c;
-            a = int.Parse(txtNum1.Text);
-            b = int.Parse(txtNum2.Text);
-            c = a + b;
-            lblResult.Text = "Mi resultado es " + c.ToString();
-        }
+            //Obtenemos la fecha para la caja de texto
+            //TextBox1.Text = Calendar1.SelectedDate.ToString();
 
-        protected void ImgbtnAdd_Click(object sender, ImageClickEventArgs e)
-        {
-            int a, b, c;
-            a = int.Parse(txtNum1.Text);
-            b = int.Parse(txtNum2.Text);
-            c = a + b;
-            lblResult.Text = "Mi resultado es " + c.ToString();
-        }
+            //Fecha corta
+            //TextBox1.Text = Calendar1.SelectedDate.ToShortDateString();
 
-        /// <summary>
-        /// Obtenemos el index del dropdownList
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        protected void Button2_Click(object sender, EventArgs e)
-        {
-            //Obtiene el indice del combo
-            string s ="Index s: "+ ddlQualification.SelectedIndex.ToString();
-            //Obtiene la opcion seleccionada
-             s += "<br/> Item seleccionado es: " + ddlQualification.SelectedItem.ToString();
-            //Obtiene el valor de cada elemento
-             s += "<br/> El valor del item seleccionado es: " + ddlQualification.SelectedValue.ToString();
-            lblDDLResult.Text = s;
-        }
+            //Formato de fecha
+            TextBox1.Text = Calendar1.SelectedDate.ToString("dd-MM-yyyy");
 
-        protected void ddlQualification_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //Obtiene el indice del combo
-            string s = "Index s: " + ddlQualification.SelectedIndex.ToString();
-            //Obtiene la opcion seleccionada
-            s += "<br/> Item seleccionado es: " + ddlQualification.SelectedItem.ToString();
-            //Obtiene el valor de cada elemento
-            s += "<br/> El valor del item seleccionado es: " + ddlQualification.SelectedValue.ToString();
-            lblDDLResult.Text = s;
-        }
+            //Formato de fecha 2
+            TextBox1.Text = Calendar1.SelectedDate.ToString("dd MMMM, yyyy");
 
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            string k = "";
-            foreach (ListItem li in CheckBoxList1.Items)
-            {
-
-                if (li.Selected == true)
-                {
-                    k +="<br/>"+ li.Text.ToString();
-                        
-                }
-            }
-            Response.Write(k);
+            Calendar1.Visible = false;
         }
     }
 }
