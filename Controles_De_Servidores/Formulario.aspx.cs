@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace Controles_De_Servidores
 {
@@ -20,24 +15,20 @@ namespace Controles_De_Servidores
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Calendar1.Visible = true;
-        }
 
-        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
-        {
-            //Obtenemos la fecha para la caja de texto
-            //TextBox1.Text = Calendar1.SelectedDate.ToString();
+            string ext = System.IO.Path.GetExtension(FileUpload1.FileName);
 
-            //Fecha corta
-            //TextBox1.Text = Calendar1.SelectedDate.ToShortDateString();
-
-            //Formato de fecha
-            TextBox1.Text = Calendar1.SelectedDate.ToString("dd-MM-yyyy");
-
-            //Formato de fecha 2
-            TextBox1.Text = Calendar1.SelectedDate.ToString("dd MMMM, yyyy");
-
-            Calendar1.Visible = false;
+            if (ext == ".txt")
+            {
+                string path = Server.MapPath("~\\Files\\");
+                FileUpload1.SaveAs(path + FileUpload1.FileName);
+            }
+            else
+            {
+                Response.Write("Only .txt files are Allowed");
+            }
+           
         }
     }
+  
 }
